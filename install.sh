@@ -3,6 +3,7 @@
 echo "Installing NOBITA Banner..."
 
 cp -f banner.sh $HOME/banner.sh
+chmod +x $HOME/banner.sh
 
 echo "NOBITA Banner Installed!"
 echo "Run: bash ~/banner.sh"
