@@ -2,11 +2,13 @@
 
 echo "Installing NOBITA Banner..."
 
-cd $HOME
+if [ -d "$HOME/NOBITA-BANNER" ]; then
+    echo "NOBITA Banner already installed!"
+else
+    git clone https://github.com/nobita036/NOBITA-BANNER.git
+fi
 
-git clone https://github.com/nobita036/NOBITA-BANNER.git
-
-cd NOBITA-BANNER
+cd $HOME/NOBITA-BANNER
 
 chmod +x banner.sh menu.sh
 
