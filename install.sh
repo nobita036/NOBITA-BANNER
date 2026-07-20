@@ -2,8 +2,13 @@
 
 echo "Installing NOBITA Banner..."
 
-cp -f banner.sh $HOME/banner.sh
-chmod +x $HOME/banner.sh
+cd $HOME
+
+git clone https://github.com/nobita036/NOBITA-BANNER.git
+
+cd NOBITA-BANNER
+
+chmod +x banner.sh menu.sh
 
 echo "NOBITA Banner Installed!"
-echo "Run: bash ~/banner.sh"
+echo "Run: bash ~/NOBITA-BANNER/banner.sh"
