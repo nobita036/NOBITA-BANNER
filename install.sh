@@ -3,7 +3,7 @@
 echo "Installing NOBITA Banner..."
 
 if [ -d "$HOME/NOBITA-BANNER" ]; then
-    echo "NOBITA Banner already installed!"
+    echo "NOBITA Banner already exists!"
 else
     git clone https://github.com/nobita036/NOBITA-BANNER.git
 fi
